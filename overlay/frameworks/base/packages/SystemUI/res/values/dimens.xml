@@ -16,6 +16,12 @@
 */
 -->
 <resources>
+    <!-- Adjust the start padding in status bar for rounded corners --> 
+    <dimen name="status_bar_padding_start">16dp</dimen>
+
+    <!-- Adjust the end padding in status bar for rounded corners --> 
+    <dimen name="status_bar_padding_end">16dp</dimen>
+
     <!-- Adjust the icon padding in status bar for rounded corners --> 
     <dimen name="rounded_corner_content_padding">40px</dimen>
 
