@@ -117,6 +117,11 @@ on property:vendor.post_boot.parsed=1
     write /sys/devices/virtual/thermal/thermal_zone61/policy "low_limits_floor"
     write /sys/devices/virtual/thermal/thermal_zone62/policy "low_limits_floor"
 
+    # Override BCL thermal policy
+    write /sys/devices/virtual/thermal/thermal_zone6/policy "low_limits_floor"
+    write /sys/devices/virtual/thermal/thermal_zone7/policy "low_limits_floor"
+    write /sys/devices/virtual/thermal/thermal_zone8/policy "low_limits_floor"
+
 on charger
     chown system system /sys/class/leds/red/brightness
     write /sys/class/leds/red/brightness 255
