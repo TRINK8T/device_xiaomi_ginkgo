@@ -125,6 +125,14 @@ on property:vendor.post_boot.parsed=1
     # Override SOC thermal policy
     write /sys/devices/virtual/thermal/thermal_zone9/policy "low_limits_floor"
 
+    # Override PMI632 thermal policy
+    write /sys/devices/virtual/thermal/thermal_zone0/policy "low_limits_floor"
+    write /sys/devices/virtual/thermal/thermal_zone1/policy "low_limits_floor"
+    write /sys/devices/virtual/thermal/thermal_zone2/policy "low_limits_floor"
+    write /sys/devices/virtual/thermal/thermal_zone3/policy "low_limits_floor"
+    write /sys/devices/virtual/thermal/thermal_zone4/policy "low_limits_floor"
+    write /sys/devices/virtual/thermal/thermal_zone5/policy "low_limits_floor"
+
 on charger
     chown system system /sys/class/leds/red/brightness
     write /sys/class/leds/red/brightness 255
