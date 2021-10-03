@@ -356,6 +356,10 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+# Recorder
+PRODUCT_PACKAGES += \
+    Recorder
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
